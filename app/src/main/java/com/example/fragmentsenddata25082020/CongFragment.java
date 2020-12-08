@@ -23,10 +23,5 @@ public class CongFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        Bundle bundle = getArguments();
-        if (bundle != null){
-            String message = bundle.getString("string");
-            Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
-        }
     }
 }

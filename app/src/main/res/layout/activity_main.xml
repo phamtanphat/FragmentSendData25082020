@@ -15,10 +15,21 @@
         android:text="Count : 0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    <LinearLayout
-        android:id="@+id/linearContainer"
+    <fragment
+        android:id="@+id/fragmentCong"
+        android:name="com.example.fragmentsenddata25082020.CongFragment"
+        android:layout_marginTop="100dp"
         android:layout_below="@id/textViewCount"
+        tools:layout="@layout/fragment_cong"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" />
+        android:layout_height="wrap_content"/>
+
+    <fragment
+        android:id="@+id/fragmentTru"
+        android:name="com.example.fragmentsenddata25082020.TruFragment"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/fragmentCong"
+        tools:layout="@layout/fragment_tru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>

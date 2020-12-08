@@ -20,13 +20,5 @@ public class MainActivity extends AppCompatActivity {
 
         mFragmentManager = getSupportFragmentManager();
 
-        FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
-        CongFragment congFragment = new CongFragment();
-        Bundle bundle = new Bundle();
-        bundle.putString("string","Hello Fragment Cong");
-        congFragment.setArguments(bundle);
-        fragmentTransaction.add(R.id.linearContainer,congFragment);
-        fragmentTransaction.commit();
-
     }
 }
